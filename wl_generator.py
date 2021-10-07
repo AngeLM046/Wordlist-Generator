@@ -22,11 +22,11 @@ def addNumber(file, word, numbers, len_limit):
 
         if len(word) <= len_limit:
 
-            new_word = word + num + "\n"
+            new_word = word + num
 
             text = read(file)
 
-            write(file, text + new_word)
+            write(file, text + new_word + "\n")
 
             addNumber(file, new_word, numbers, len_limit)
 
