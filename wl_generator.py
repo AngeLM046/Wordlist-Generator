@@ -56,6 +56,6 @@ for word in words:
 
             numbers = "1234567890"
 
-    len_limit = len(word) + int(number_count)
+    len_limit = len(word) + int(number_count) - 1
 
     addNumber(file, word, numbers, len_limit)
